@@ -2702,16 +2702,42 @@ a.menu-toggle {
  *
  * -------------------------------------------------------------------
  */
-
+.contactRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 #cta {
 	background: #5ca959;
-	padding-top: 7.2rem;
-	padding-bottom: 9rem;
+	padding-top: 5.2rem;
+	padding-bottom: 5.2rem;
 	text-align: center;
 	color: #ffffff;
+	float: left;
+	width: 50%;
+}
+@media screen and (max-width: 1267px) {
+	#cta {
+		width: 100%;
+	}
 }
 .cta-content {
 	max-width: 740px;
+	min-height: 145px;
+	margin: 0 auto;
+}
+#cta-button-container {
+	background: #5ca959;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	color: #ffffff;
+	float: left;
+	width: 50%;
+}
+.cta-content-button-container {
+	max-width: 740px;
+	min-height: 145px;
 	margin: 0 auto;
 }
 .cta-content h1 {
