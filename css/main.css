@@ -799,6 +799,7 @@ input::-moz-focus-inner {
 }
 .section-intro .lead {
 	color: rgba(0, 0, 0, 0.45);
+	margin-bottom: 8px;
 }
 .section-intro .with-bottom-line {
 	position: relative;
@@ -807,13 +808,13 @@ input::-moz-focus-inner {
 .section-intro .with-bottom-line::after {
 	display: block;
 	background-color: #5ca959;
-	width: 120px;
+	width: 200px;
 	height: 3px;
 	content: '\0020';
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	margin-left: -60px;
+	margin-left: -105px;
 }
 @media only screen and (max-width: 600px) {
 	section .h01 {
@@ -2578,6 +2579,41 @@ a.menu-toggle {
 	padding: 0 30px;
 }
 
+#techsRow {
+	content: "";
+	display: table;
+	clear: both;
+	box-sizing: border-box;
+	padding-left: 130px;
+	margin-bottom: 20px;
+}
+
+div.gallery {
+	width: 100px;
+	height: 100px;
+}
+
+div.gallery img {
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 10px 10px 10px 10px;
+	float: left;
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
 /**
  * responsive:
  * faq
@@ -3010,7 +3046,7 @@ footer ul li {
 
 #go-top {
 	position: fixed;
-	bottom: 0;
+	bottom: 20px;
 	z-index: 600;
 	display: none;
 }
@@ -3018,9 +3054,9 @@ footer ul li {
 	text-decoration: none;
 	border: 0 none;
 	display: block;
-	height: 66px;
+	height: 60px;
 	width: 60px;
-	line-height: 66px;
+	line-height: 60px;
 	text-align: center;
 	background: #497b47;
 	color: #ffffff;
@@ -3031,7 +3067,7 @@ footer ul li {
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	border-radius: 30px 30px 0px 0px;
+	border-radius: 30px 30px 30px 30px;
 }
 #go-top a i {
 	font-size: 20px;
