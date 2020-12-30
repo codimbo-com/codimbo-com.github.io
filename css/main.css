@@ -181,9 +181,9 @@ p img {
 }
 p.lead {
 	font-family: "merriweather-light", serif;
-	font-size: 1.8rem;
-	line-height: 1.8;
+	font-size: 1.6rem;
 	color: #737373;
+	margin-bottom: 0rem;
 }
 @media only screen and (max-width: 768px) {
 	p.lead {
@@ -1913,7 +1913,7 @@ a.menu-toggle {
 .profileContainer {
 	display: flex;
 	outline: none;
-	padding-left: 30px;
+	padding-left: 10px;
 }
 
 .imgContainer {
@@ -2709,7 +2709,7 @@ a.menu-toggle {
 }
 #cta {
 	background: #5ca959;
-	padding-top: 5.2rem;
+	padding-top: 2rem;
 	padding-bottom: 5.2rem;
 	text-align: center;
 	color: #ffffff;
@@ -2929,6 +2929,7 @@ footer ul li {
 }
 .footer-bottom .copyright span {
 	display: inline-block;
+	color: #aaaaaa;
 }
 .footer-bottom .copyright span::after {
 	content: "|";
