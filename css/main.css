@@ -3071,20 +3071,36 @@ div.gallery img {
 
 #slideshowRow {
 	content: "";
-	display: table;
 	clear: both;
 	box-sizing: border-box;
-	padding-left: 60px;
 	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 10px auto;
+	position: relative;
+	text-align: center;
 }
 
-div.sliderGallery {
+div.sliderGalleryIphone {
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
 	min-width: 200px;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+div.sliderGallery {
+	min-width: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 250px;
+	height: 200px;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
 }
 
 .responsiveSlider {
@@ -3108,16 +3124,20 @@ div.sliderGallery {
 
 #slideshowIphoneRow {
 	content: "";
-	display: table;
 	clear: both;
 	box-sizing: border-box;
-	padding-left: 270px;
 	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	text-align: center;
 }
 
 .slideshowIphone {
-	width: 280px;
-	height: 580px;
+	width: 260px;
+	height: 560px;
 }
 .slideshowIphone > div {
 	position: absolute;
@@ -3130,8 +3150,8 @@ div.sliderGallery {
 .iphone-x {
 	position: relative;
 	margin: 40px auto;
-	width: 280px;
-	height: 580px;
+	width: 260px;
+	height: 560px;
 	background-color: #7371ee;
 	background-image: linear-gradient(60deg, #7371ee 1%, #a1d9d6 100%);
 	border-radius: 40px;
@@ -3183,7 +3203,7 @@ div.sliderGallery {
 	z-index: 599;
 }
 .iphone-x b {
-	left: 5%;
+	left: -10px;
 	top: 0px;
 	transform: translate(180px, 4px);
 	width: 12px;
@@ -3231,8 +3251,8 @@ div.sliderGallery {
 }
 
 .iphone-x img {
-	width: 280px;
-	height: 580px;
+	width: 260px;
+	height: 560px;
 }
 
 /**
