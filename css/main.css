@@ -1627,7 +1627,7 @@ a.menu-toggle {
 }
 @media only screen and (max-width: 768px) {
 	#process {
-		padding-bottom: 27rem;
+		padding-bottom: 70rem;
 	}
 	.process-content .right-side,
 	.process-content .left-side {
@@ -2626,13 +2626,17 @@ a.menu-toggle {
 	display: table;
 	clear: both;
 	box-sizing: border-box;
-	padding-left: 130px;
 	margin-bottom: 20px;
 }
 
 div.gallery {
+	margin-left: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
 	width: 100px;
-	height: 100px;
+	height: 120px;
 }
 
 div.gallery img {
@@ -2649,8 +2653,28 @@ div.gallery img {
 	text-align: center;
 }
 
+.responsiveTechsRow {
+	padding: 10px 10px 10px 10px;
+	float: left;
+	text-align: center;
+}
+
 @media only screen and (max-width: 700px) {
 	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.responsive {
+		width: 100%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.responsiveTechsRow {
 		width: 49.99999%;
 		margin: 6px 0;
 	}
@@ -3054,18 +3078,29 @@ div.gallery img {
 
 /* SLIDER */
 #slideshow {
-	margin: 80px auto;
+	content: "";
+	clear: both;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
 	position: relative;
-	width: 1200px;
-	height: 100px;
-	padding: 10px;
+	text-align: center;
+	height: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+	#slideshow {
+		height: 370px;
+		margin-bottom: 30px;
+	}
 }
 
 #slideshow > div {
 	position: absolute;
 	top: 10px;
-	left: 10px;
-	right: 10px;
 	bottom: 10px;
 }
 
@@ -3093,14 +3128,12 @@ div.sliderGalleryIphone {
 }
 
 div.sliderGallery {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 	min-width: 200px;
 	margin-left: 20px;
 	margin-right: 20px;
-	width: 250px;
-	height: 200px;
-	vertical-align: middle;
-	text-align: center;
-	display: table-cell;
 }
 
 .responsiveSlider {
